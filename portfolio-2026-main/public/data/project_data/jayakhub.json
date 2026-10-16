@@ -1,0 +1,76 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/j1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "One dashboard to run an entire food delivery ecosystem",
+            "text3": "Jayakhub Admin is a multi-tenant administration platform that coordinates every moving part of a food delivery operation — restaurants, drivers, customers, orders, finances, support tickets, marketing campaigns, and platform configuration — from a single, role-based access control dashboard. I built the entire front-end using Next.js 16, React 19, Tailwind CSS v4, and Shadcn/UI, architecting the system to scale across multiple tenants without sacrificing clarity or speed."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE CHALLENGE",
+            "text2": "Taming operational complexity without overwhelming operators",
+            "text3": "A food delivery admin platform touches an enormous surface area — live order tracking, driver geo-locations, KYC document verification, payout processing, discount structures, and campaign analytics all running in parallel. The challenge was designing a system where an admin can jump between modules without losing context, and where role-based permissions intelligently hide irrelevant controls without breaking the interface for any access level."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/j4.webp",
+            "caption": "Main dashboard — operational overview across orders, drivers, and restaurants at a glance"
+        },
+        {
+            "type": "bigtext",
+            "text1": "FEATURE MODULES",
+            "text2": "Eight operational domains, one unified system",
+            "text3": "The platform is divided into focused modules: Orders (with intercepted drawer detail views showing timelines, rider assignments, and logs), Restaurants (KYC approvals, status toggling, tier management), Drivers (live map coordinates, geo-fenced zone alerts, trip tracking), Customers (LTV rankings, order histories), Finance (transaction audits, payout processing, delivery charge tier pricing), Marketing (coupons, campaigns, support tickets, and a TipTap-powered blog editor), Reports (automated analytics across all entities), and Platform Settings (banners, region controls, system logs)."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/j2.webp",
+            "caption": "Orders module — intercepted drawer keeps the list mounted while reviewing order detail"
+        },
+        {
+            "type": "bigtext",
+            "text1": "ARCHITECTURE",
+            "text2": "Server Actions, intercepted routes, and RBAC — built to hold",
+            "text3": "All data mutations flow through a centralised Next.js Server Actions layer (ServerAction.ts) with an Axios interceptor that auto-attaches auth tokens and handles 401 redirects without manual token passing. Authentication uses passwordless OTP email validation backed by HttpOnly cookies. The intercepted routes pattern keeps background list views mounted while drawer detail modals are open — navigating back restores list state instantly. The RBAC system decodes Base64 permission cookies on the server render and evaluates access at the component level via a PermissionsProvider, supporting full, view-edit, and view-only access tiers."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/j4.webp",
+            "caption": "Finance module — transaction audit and payout processing with status transitions"
+        },
+        {
+            "type": "bigtext",
+            "text1": "MOBILE RESPONSIVE",
+            "text2": "Admin-grade power, any screen, anywhere",
+            "text3": "Jayakhub Admin is fully responsive across every device. Whether an operator is managing live orders from a desktop, checking driver locations on a tablet, or reviewing payout requests on a phone, the interface adapts without losing functionality. Every module — tables, drawers, maps, charts, and forms — was built mobile-first, ensuring the platform works in the field just as well as it does in the office."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/j5.webp",
+            "caption": "Fully responsive layout — complete admin functionality across all screen sizes"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Scale is a design problem before it is an engineering one",
+            "text3": "Jayakhub pushed me to think about information architecture at a systems level — not just individual screens. When a single dashboard governs restaurants, drivers, finances, and support simultaneously, the real design challenge is making sure an admin can always answer the question 'what needs my attention right now?' without hunting through modules. Every structural decision — intercepted routes, RBAC-filtered navigation, server-rendered reports — was made in service of that clarity."
+        }
+    ],
+    "details": {
+        "timeline": "2026 – Present",
+        "company": "Samarix",
+        "tags": [
+            "Web App",
+            "Admin Dashboard",
+            "Food Delivery"
+        ],
+        "projectTitle": "JAYAKHUB",
+        "projectLink": "https://jayakhub.com"
+    }
+}

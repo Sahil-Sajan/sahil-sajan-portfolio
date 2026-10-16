@@ -1,0 +1,106 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/sw_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "An AI-powered research assistant for Australian tax and compliance",
+            "text3": "SavvyWise aims to drastically reduce time spent on tax research, helping accountants reclaim their time and increase billable hours. I was approached by co-founder Agastya Patel to lead the design and user experience strategy during the product’s early development."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE APPROACH",
+            "text2": "Listen. Design. Ship. Repeat.",
+            "text3":
+            "We move fast and iterate often. We collect daily feedback from active users, break down the core problems, and work through solutions in real time. From there, I turn those insights into user flows and high‑fidelity designs for the dev team. Being an early‑stage startup lets us ship improvements weekly and rethink big features whenever the feedback calls for it."
+        },
+        {
+            "type": "img",
+            "caption": "Designed the logo, inspired by an hourglass to represent time savings and the letter S",
+            "url": "/project_imgs/sw_2.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE JOURNEY",
+            "text2": "Where do I begin",
+            "text3":
+            "Just a few months in, we’ve already shipped a wide range of features. I’ve loved shaping the product’s design aesthetic and crafting thoughtful flows that help accountants automate everyday work. Below are a few shipped examples. One early issue we tackled surfaced two months post‑launch, when users reported inaccurate tax responses. We traced it back to the UI: model selection was buried in a dropdown, making it easy to stay on “General Tasks” instead of switching to “Tax Research.” The solution was clearer separation and visibility, helping users confidently choose the right tool for the job."
+        },
+        {
+            "type": "img",
+            "caption": "User were previously choosing models from a simple dropdown model",
+            "url": "/project_imgs/sw_3.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "A SOLUTION",
+            "text2": "Color me this",
+            "text3":
+            "We realized that research and daily tasks are distinct mental modes for accountants, and the UI needed to reflect that. Following Agastya’s suggestion to separate these workflows, we moved away from a single interface. I applied a color-coding strategy to guide the user: the main Tax Research model shines in our brand yellow, secondary research tools are highlighted in orange, and general tasks remain in a clean black-and-white. This clear visual separation helps users instantly recognize which tool they are using."
+        },
+        {
+            "type": "img",
+            "caption": "Research separated into categories and color coded",
+            "url": "/project_imgs/sw_4.webp"
+        },
+        {
+            "type": "img",
+            "caption": "A banner in chat to help remind users of the current research type",
+            "url": "/project_imgs/sw_5.webp"
+        },
+        {
+            "type": "img",
+            "caption": "The same banner transfers into documents linked with the research",
+            "url": "/project_imgs/sw_6.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE REST",
+            "text2": "More. More. More.",
+            "text3":
+            "Here are a few more features and layouts we shipped along the way. Consistency in the design system and a focus on simple, direct interactions were critical - accountants value clarity, speed, and trust. Every decision here supports SavvyWise’s goal: saving accountants time by removing friction from everyday workflows."
+        },
+        {
+            "type": "img",
+            "caption": "Workflows that let users use and create templates for prompting",
+            "url": "/project_imgs/sw_7.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Expanded organisation management",
+            "url": "/project_imgs/sw_8.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Choosing a plan for your organisation",
+            "url": "/project_imgs/sw_9.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Email templates",
+            "url": "/project_imgs/sw_10.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Balancing the books on what I learned",
+            "text3":
+            "This project came together with a team focused on shipping high‑quality features while staying deeply connected to end users. That alignment made adoption in a complex space like tax feel achievable. Looking ahead, color‑contrast accessibility is a key area we’re continuing to improve."
+        }
+    ],
+    "details": {
+        "timeline": "Sep '25 - Present",
+        "company": "SavvyWise",
+        "tags": [
+            "Web App",
+            "Tax Tech",
+            "AI Integrated"
+        ],
+        "projectTitle": "SAVVYWISE",
+        "projectLink": "https://savvywise.com.au"
+    }
+}

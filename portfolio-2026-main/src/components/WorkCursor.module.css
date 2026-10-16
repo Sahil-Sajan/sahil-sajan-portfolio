@@ -1,0 +1,84 @@
+.workCursor {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+  overflow: visible;
+  width: 180px;
+}
+
+.cursorTop {
+  background: var(--off-white);
+  height: 64px;
+  border-radius: 6px;
+  border: 0px solid var(--off-teal);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--off-black);
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 21px;
+  white-space: nowrap;
+  width: 0;
+  padding: 0;
+  transition:
+    width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    border 0.15s ease;
+}
+
+.cursorTop.revealed {
+  width: 100%;
+  padding: 9px;
+  border: 1.5px solid var(--off-teal);
+}
+
+.cursorBottom {
+  background: var(--light-off-teal);
+  border-radius: 6px;
+  border: 0px solid var(--off-teal);
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 0;
+  padding: 0;
+  transition:
+    width 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+    padding 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+    border 0.15s ease 0.05s;
+}
+
+.cursorBottom.revealed {
+  width: 100%;
+  padding: 9px;
+  border: 1.5px solid var(--off-teal);
+}
+
+.cursorMarquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cursorMarqueeTrack {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+  animation: marquee 9s linear infinite;
+  color: var(--dark-green);
+  padding: 0 9px;
+}
+
+.cursorArrow {
+  width: 18px;
+  height: auto;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

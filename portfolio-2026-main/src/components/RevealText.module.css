@@ -1,0 +1,12 @@
+/* Each word is an atomic inline-block that never breaks internally, so the
+   per-letter spans wrap by word (not by letter) exactly like plain text. */
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* inline-block keeps each letter as its own box for the reveal */
+.char {
+  display: inline-block;
+  will-change: opacity;
+}

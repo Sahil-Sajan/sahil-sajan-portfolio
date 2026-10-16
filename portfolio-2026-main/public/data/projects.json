@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "name": "LISTR",
+            "description": "AI-powered lead response and qualification for real estate",
+            "img": "/project_imgs/l1.webp",
+            "tags": [
+                "Web App",
+                "AI Operations",
+                "SaaS"
+            ]
+        },
+        {
+            "name": "SENTINEL KIDS",
+            "description": "A real-time parental control web platform for monitoring device activity and app usage",
+            "img": "/project_imgs/sentinel (2).webp",
+            "tags": [
+                "Web App",
+                "Child Safety",
+                "Real-Time Tech"
+            ]
+        },
+        {
+            "name": "JAYAKHUB",
+            "description": "A multi-tenant admin platform coordinating operations, finance, drivers, restaurants, and RBAC for a food delivery ecosystem",
+            "img": "/project_imgs/j1.webp",
+            "tags": [
+                "Web App",
+                "Admin Dashboard",
+                "Food Delivery"
+            ]
+        },
+        {
+            "name": "ROOS BROTHERS",
+            "description": "A premium luxury e-commerce brand storefront engineered with a customer-facing admin panel",
+            "img": "/project_imgs/r1.webp",
+            "tags": [
+                "Web App",
+                "E-Commerce",
+                "Admin Dashboard"
+            ]
+        },
+        {
+            "name": "BLACK & WHITE VAPORS",
+            "description": "An end-to-end e-commerce platform storefront equipped with real-time inventory and order management tracking",
+            "img": "/project_imgs/b1.webp",
+            "tags": [
+                "Freelance",
+                "Web App",
+                "E-Commerce"
+            ]
+        }
+    ]
+}

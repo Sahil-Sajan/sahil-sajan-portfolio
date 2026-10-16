@@ -1,0 +1,90 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "An AI-powered web app to simulate table reads for film scripts",
+            "text3":
+            "Table reads are an integral part of script evaluation, providing invaluable insights into a screenplay's strengths and weaknesses before production. Actors typically read the script aloud, allowing creators to assess dialogue, pacing, and character dynamics. Table Read can simulate this crucial process, democratizing access to feedback and enabling more efficient script iteration for writers and filmmakers."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE STORY",
+            "text2": "All for the love of the game",
+            "text3":
+            "One of VigaET’s main goals has always been to democratize the filmmaking process. We started in India with a simple idea: if we want to raise the quality and taste of films here, it has to begin with giving talent access to the right tools - tools they can use and iterate on from anywhere, without needing a huge budget or expensive systems. Vivek Reddy, the CEO was vibe coding ideas for a product to help his script making process when the first bare‑bones version of the product took shape."
+        },
+        {
+            "type": "img",
+            "caption": "The initial vibe-coded prototype",
+            "url": "/project_imgs/tr_2.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE PRODUCT",
+            "text2": "Keeping the interface simple",
+            "text3":
+            "Good artists steal and I did. As we were building a voice‑based app, I closely studied existing sound‑first tools like FL Studio and other interfaces that sound designers have refined over years of use. The goal was to introduce stronger visual tools to help writers better visualize the narration of their scripts, while also leaving enough room in the interface for future features and scale. Branding was kept simple and consistent by extending the visual language from Movie Colab Projects, as this product was the latest addition to the Movie Colab suite."
+        },
+        {
+            "type": "img",
+            "caption": "Every line of dialogue, sequenced and synced to its place in the scene’s audio timeline.",
+            "url": "/project_imgs/tr_3.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Turning script processing into a moment of inspiration with quotes from iconic films & series.",
+            "url": "/project_imgs/tr_4.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "MODALS",
+            "text2": "Streamlining for iterations",
+            "text3":
+            "In an app where writers need to select character voices, clone their own voice, and fine‑tune it repeatedly, modals felt like the right choice. They’re fast, keep the user anchored in the same context, and avoid forcing a layout change, which makes the entire table‑read tuning process smoother and more efficient. A few examples below .."
+        },
+        {
+            "type": "img",
+            "caption": "Cloning an audio for a custom voice",
+            "url": "/project_imgs/tr_5.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Editing and iterating on dialogues with the help of AI",
+            "url": "/project_imgs/tr_6.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Assign Voices, manage clones and browse voices",
+            "url": "/project_imgs/tr_7.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Buying minutes (credits)",
+            "url": "/project_imgs/tr_8.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Laying my cards on the Table",
+            "text3":
+            "There’s a large empty section below the audio waveforms that was intentionally reserved for future visualisation layers. In hindsight, it could have been organized more thoughtfully, but it works well enough for now and I’m excited to eventually fill it with meaningful, useful layers for our users."
+        }
+    ],
+    "details": {
+        "timeline": "Mar '25  - Present",
+        "company": "VigaET",
+        "tags": [
+            "Web App",
+            "Voice",
+            "AI Integrated"
+        ],
+        "projectTitle": "TABLE READ",
+        "projectLink": "https://moviecolab.com/tableread/"
+    }
+}

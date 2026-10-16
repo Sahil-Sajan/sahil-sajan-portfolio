@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sahil Sajjan — Fullstack Developer</title>
+  <meta name="description"
+    content="Portfolio of Sahil Sajjan — Fullstack Developer crafting clean, fluid web experiences with pixel-perfect execution." />
+  <meta name="author" content="Sahil Sajjan" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samarixmernstack.samarix.com/" />
+  <meta property="og:title" content="Sahil Sajjan — Fullstack Developer" />
+  <meta property="og:description"
+    content="Fullstack Developer building production-grade web apps with Next.js, React, TypeScript, and Node.js." />
+  <meta property="og:image" content="https://samarixmernstack.samarix.com/real.jpg" />
+
+  <meta name="keywords"
+    content="Sahil Sajjan, Fullstack Developer, Frontend Developer, React, Next.js, TypeScript, Portfolio, Samarix, Sentinel Kids, Nortra, Roos Brothers" />
+
+  <link rel="canonical" href="https://samarixmernstack.samarix.com/" />
+
+  <!-- Fonts: preconnect once, then a single consolidated Google Fonts request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="/fonts/Stara-Medium.woff2" as="font" type="font/woff2" crossorigin
+    fetchpriority="high" />
+  <link rel="preload" href="/fonts/Stara-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;500;600&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&family=Oswald:wght@400;600;700&family=Pacifico&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      // Configuration
+      const STANDARD_WIDTH = 1920; // The width your design was built for
+
+      function applyScale() {
+        const width = window.innerWidth;
+        const root = document.documentElement; // Apply to <html> tag, safer than #root
+
+        if (width > STANDARD_WIDTH) {
+          const scale = width / STANDARD_WIDTH;
+          // Apply CSS variable for use in styling
+          root.style.setProperty('--app-scale', scale);
+          // Apply the actual browser zoom
+          root.style.zoom = scale;
+        } else {
+          root.style.setProperty('--app-scale', 1);
+          root.style.zoom = 1;
+        }
+      }
+
+      // Run immediately (before DOM is fully parsed)
+      applyScale();
+
+      // Run on resize
+      window.addEventListener('resize', applyScale);
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

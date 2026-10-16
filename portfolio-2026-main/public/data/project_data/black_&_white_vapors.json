@@ -1,0 +1,77 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/b1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "End-to-end e-commerce, delivered solo",
+            "text3": "Black & White Vapors is a full-featured vape e-commerce platform I designed and developed independently as a freelance project. Built with Next.js, TypeScript, and Tailwind CSS, the platform covers the complete commerce stack — product catalogue, filtering, cart, checkout, and a full custom admin dashboard for real-time inventory, order, and product management. I managed the entire project lifecycle solo, from requirements gathering through to production deployment on Vercel."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE BRIEF",
+            "text2": "One developer. Full platform. Hard deadline.",
+            "text3": "The client needed a production-ready e-commerce platform with an admin backend, delivered within a fixed timeline. There was no team — just me handling scoping, UI design, development, and deployment. Working solo on a full-stack commerce project demands tight prioritisation: I focused on getting the core buying flow and admin operations right first, then layered in refinements."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/b2.webp",
+            "caption": "Landing page — full product catalogue with search and category filtering"
+        },
+        {
+            "type": "bigtext",
+            "text1": "LANDING PAGE",
+            "text2": "Products front and centre from the first scroll",
+            "text3": "The landing page is built around the product catalogue — every item is surfaced immediately without friction. Products are displayed in a clean grid with category filters and a live search bar, letting users drill down to exactly what they want in seconds. The hero section leads into the catalogue naturally, keeping the path from landing to browsing as short as possible. Featured and new arrivals are promoted at the top to guide first-time visitors toward high-interest inventory."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/b5.webp",
+            "caption": "Product detail page — variants, description, and add-to-cart"
+        },
+        {
+            "type": "bigtext",
+            "text1": "PRODUCT DETAIL PAGE",
+            "text2": "Everything needed to make the decision",
+            "text3": "The product detail page is designed to close the gap between browsing and buying. It presents the full product image gallery, detailed description, flavour and nicotine variant selectors, stock status, and a prominent add-to-cart action — all in a single uncluttered view. Variant selection updates pricing and availability in real time, and the cart integrates without a page reload so users stay in context."
+        },
+        {
+            "type": "bigtext",
+            "text1": "CHECKOUT PAGE",
+            "text2": "Straight line from cart to confirmation",
+            "text3": "The checkout flow was designed to remove every unnecessary step between cart and order completion. It covers shipping details, delivery method selection, and order summary in a single-page layout — no multi-step wizard, no account requirement. Input validation runs inline so users correct errors immediately rather than at submission. On completion, the order is confirmed with a clear summary and triggers the admin dashboard update in real time."
+        },
+        {
+            "type": "bigtext",
+            "text1": "MOBILE RESPONSIVE",
+            "text2": "Built mobile-first, refined for every screen",
+            "text3": "The entire storefront was built mobile-first — layouts, typography, tap targets, and navigation were all designed for small screens before scaling up to desktop. The product grid reflows from a single column on mobile to a multi-column layout on wider viewports. The cart and checkout adapt their layout so the order summary stays visible without scrolling on desktop, while stacking cleanly on mobile. Performance was kept tight throughout with lazy-loaded images and compressed assets ensuring fast load times on mobile connections."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/b3.webp",
+            "caption": "Mobile responsive design — storefront optimised across all screen sizes"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "What solo delivery teaches you",
+            "text3": "Owning the full lifecycle of a production platform — from the first requirements call to deployment and client handoff — builds a different kind of clarity about what actually matters. Every feature needed to justify its scope. Every design decision needed to survive without a team to catch edge cases. This project reinforced my ability to ship complete, production-grade work independently and on time."
+        }
+    ],
+    "details": {
+        "timeline": "June 2026 – July 2026",
+        "company": "Freelance",
+        "tags": [
+            "Freelance",
+            "Web App",
+            "E-Commerce"
+        ],
+        "projectTitle": "BLACK & WHITE VAPORS",
+        "projectLink": "https://www.blackandwhitevapors.com/"
+    }
+}

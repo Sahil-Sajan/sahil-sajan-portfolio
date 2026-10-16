@@ -1,0 +1,199 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    position: sticky !important;
+    top: 0px;
+    z-index: 9999;
+    background-color: var(--off-teal);
+        padding-bottom: 1px;
+}
+
+.header > .middle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+}
+
+.menu-active {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.wrapper {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    justify-content: start;
+    background-color: var(--off-teal);
+    pointer-events: all;
+    clip-path: inset(50% 50% 50% 50% round 9px);
+    z-index: 1;
+}
+
+.rounder {
+    position: absolute;
+    bottom: -8.5px;
+    right: 0px;
+    display: flex;
+    width: 100%;
+    height: 9px;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0px;
+    border-top: 1px solid var(--off-teal);
+    box-sizing: border-box;
+
+    .left {
+        display: flex;
+        gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 9px;
+        overflow: hidden;
+    }
+
+    .middle {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right {
+        display: flex;
+        gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 9px;
+        overflow: hidden;
+    }
+
+    svg {
+        width: 9px;
+        height: 9px;
+    }
+
+    svg.svg-shrink-left, svg.svg-shrink-right {
+        transform: scaleY(1);
+    }
+
+    svg.svg-shrink-left {
+        transform-origin: top right;
+    }
+
+    svg.svg-shrink-right {
+        transform-origin: top left;
+    }
+}
+
+.green-rect {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100dvh;
+    background-color: var(--dark-green);
+    clip-path: inset(50% 50% 50% 50% round 9px);
+    z-index: 0;
+}
+
+.wrapper .middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 1px;
+    flex-direction: column;
+    pointer-events: all;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    background-color: var(--off-teal);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        background-color: var(--light-off-teal);
+        color: var(--dark-green);
+        border-radius: 9px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        font-size: 13px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    a.active {
+        background-color: var(--off-white);
+        color: var(--off-black);
+    }
+    a:hover {
+        background-color: var(--off-white);
+        color: var(--off-black);
+    }
+}
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    .wrapper .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rounder .left svg.svg-shrink-right, .rounder .right svg.svg-shrink-left {
+        display: none;
+    }
+    .rounder .right svg.svg-shrink-right, .rounder .left svg.svg-shrink-left {
+        transform: scalex(0.5);
+    }
+    .rounder .left {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .rounder .middle {
+        min-width: 0px !important;
+    }
+
+    .rounder .left, .rounder .right {
+        width: 9px;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .rounder .left, .rounder .right {
+        display: none;
+    }
+}

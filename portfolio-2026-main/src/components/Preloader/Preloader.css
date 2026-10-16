@@ -1,0 +1,127 @@
+#preloader {
+    top: 0;
+    left: 0;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+	inset: 0;
+	z-index: 0;
+	background-color: var(--off-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: wait;
+}
+
+.preloader-content-wrapper {
+    width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	gap: 0.6px;
+    padding: 0;
+}
+
+.preloader-box {
+	background-color: var(--dark-green);
+	border-radius: 9px;
+	/* Initial state: GSAP will animate from here */
+	width: 0;
+	height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+    z-index: 2;
+    rotate: -6deg;
+    transform-origin: center center;
+    /* border: 3px solid var(--off-teal); */
+}
+
+.counter-wrapper {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 42px;
+	font-weight: 400;
+	color: var(--off-white);
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-line {
+    display: flex;
+	overflow: hidden; /* Hides the text as it slides in/out */
+	font-size: 24px;
+	font-weight: 400;
+    text-wrap: wrap;
+    min-width: 0;
+    width: max-content;
+    height: max-content;
+    color: var(--off-black);
+    padding: 16px;
+    span {
+        opacity: 1;
+    }
+    span.span-2 {
+        font-weight: 600;
+        font-family: 'Lora';
+    }
+    span.period {
+        font-weight: 600;
+        color: var(--dark-green);
+    }
+}
+
+.mobile-info {
+    z-index: 1;
+    display: none;
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    color: var(--off-black-06);
+    text-align: center;
+    top: 30px;
+    left: 0px;
+    text-wrap: wrap;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.bottom-info {
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    color: var(--off-black-06);
+    text-align: center;
+    bottom: 30px;
+    left: 0px;
+    text-wrap: wrap;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .mobile-info {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    .quote-line {
+        font-size: 18px;
+        padding: 12px;
+    }
+    .counter-wrapper {
+        font-size: 18px;
+    }
+}

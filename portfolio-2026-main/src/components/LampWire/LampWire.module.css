@@ -1,0 +1,68 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 36px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  touch-action: none;
+  gap: 0;
+  line-height: 0;
+}
+
+.anchor {
+  width: 10px;
+  height: 6px;
+  background: var(--off-black);
+  border-radius: 0 0 4px 4px;
+  flex-shrink: 0;
+  margin: 0;
+  display: block;
+}
+
+.wireGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: all;
+  touch-action: none;
+  cursor: grab;
+  transform-origin: top center;
+  gap: 0;
+  line-height: 0;
+}
+
+.cord {
+  width: 2px;
+  height: 70px;
+  background: var(--off-black);
+  opacity: 0.75;
+  display: block;
+  margin-bottom: -9px;
+}
+
+.knob {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--off-black);
+  opacity: 0.85;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  flex-shrink: 0;
+}
+
+.hint {
+  position: absolute;
+  bottom: -22px;
+  font-size: 9px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--off-black);
+  opacity: 0.4;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  pointer-events: none;
+  text-transform: uppercase;
+}

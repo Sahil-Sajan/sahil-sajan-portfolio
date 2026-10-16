@@ -1,0 +1,294 @@
+@keyframes ghostMove {
+    0% {
+        transform: translateX(110cqw) rotateZ(-90deg);
+    }
+    100% {
+        transform: translateX(-40cqw) rotateZ(-90deg);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 264px;
+}
+
+footer > .middle {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+    max-width: 1400px;
+}
+
+footer > .middle > .right-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 1px;
+}
+
+footer > .middle > .right-wrapper > .right-subwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1px;
+}
+
+footer > .middle > .right-wrapper >  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    background-color: var(--off-teal);
+    width: 65px;
+    height: 100%;
+    flex-shrink: 0;
+
+    a {
+        text-decoration: none;
+        background-color: var(--light-off-teal);
+        color: var(--dark-green);
+        border-radius: 9px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        font-size: 13px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    a.active {
+        background-color: var(--off-white);
+        color: var(--off-black);
+    }
+    a:hover {
+        background-color: var(--off-white);
+        color: var(--off-black);
+    }
+    a:hover > svg {
+        transform: scale(0.95);
+    }
+}
+
+footer > .middle > .right-wrapper > .right-subwrapper > .web-links {
+    width: 100%;
+    height: 65px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+footer > .middle > .right-wrapper > .right-subwrapper > .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 30px 9px 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    gap: 9px;
+    background-color: var(--off-white);
+
+    .au-revoir {
+        container-type: inline-size;
+        position: relative;
+        width: 100%;
+        height: 74px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .au-revoir .title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .au-revoir .title h1 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+        font-family: "Stara", "sans-serif";
+        color: var(--off-black);
+        white-space: nowrap;
+    }
+
+    .au-revoir .ghost {
+        width: 26px;
+        height: 39px;
+        background-color: var(--light-off-teal);
+        background-image: radial-gradient(ellipse at 35% 40%, var(--dark-green) 8%, transparent 0%),
+            radial-gradient(ellipse at 65% 40%, var(--dark-green) 8%, transparent 0%),
+            radial-gradient(ellipse at 50% 60%, var(--dark-green) 8%, transparent 0%);
+        border-radius: 100% / 70% 70% 0% 0%;
+        transform: translateX(110cqw) rotateZ(-90deg);
+        position: relative;
+        animation: ghostMove 3.5s ease-out infinite;
+    }
+
+    .au-revoir .ghost div {
+        position: absolute;
+        width: 20%;
+        background-color: var(--light-off-teal);
+    }
+
+    .au-revoir .ghost div:nth-of-type(1) {
+        height: 23px;
+        left: 0;
+        bottom: -20px;
+        border-radius: 100% / 0% 0% 50% 50%;
+    }
+
+    .au-revoir .ghost div:nth-of-type(2),
+    .au-revoir .ghost div:nth-of-type(4) {
+        height: 13px;
+        left: 20%;
+        bottom: -10px;
+        border-radius: 100% / 50% 50% 0% 0%;
+        background-color: transparent;
+    }
+
+    .au-revoir .ghost div:nth-of-type(3) {
+        height: 13px;
+        left: 40%;
+        bottom: -13px;
+        border-radius: 100% / 0% 0% 60% 60%;
+    }
+
+    .au-revoir .ghost div:nth-of-type(4) {
+        left: 60%;
+    }
+
+    .au-revoir .ghost div:nth-of-type(5) {
+        height: 10px;
+        left: 80%;
+        bottom: -9px;
+        border-radius: 100% / 0% 0% 70% 70%;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: start;
+        height: 100%;
+        p.copyright {
+            font-size: 15px;
+            color: var(--off-black-06);
+            font-weight: 600;
+            text-wrap: wrap;
+            margin: 0;
+        }
+
+        p.tagline {
+            font-size: 15px;
+            color: var(--off-black-06);
+            font-weight: 400;
+            text-wrap: wrap;
+            margin: 0;
+        }
+    }
+}
+
+footer > .middle > .left {
+    min-width: 636px;
+    max-width: 636px;
+    height: 100%;
+    border-radius: 0px 9px 9px 0px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    footer {
+        height: max-content;
+    }
+
+    footer > .middle {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    footer > .middle > .right-wrapper {
+        flex-direction: column;
+    }
+
+    footer > .middle > .right-wrapper > .links {
+        flex-direction: row;
+        width: 100%;
+        height: 65px;
+    }
+
+    footer > .middle > .left {
+        width: 100%;
+        height: 264px;
+        overflow: hidden;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    footer > .middle > .left img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        /* object-position: left; */
+    }
+
+    footer > .middle > .right-wrapper {
+        width: 100%;
+        height: 319px;
+    }
+
+    footer > .middle > .right {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    footer > .middle > .right-wrapper > .right-subwrapper > .right > .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        height: max-content;
+    }
+
+    footer .au-revoir {
+        height: 48px;
+        justify-content: center;
+    }
+
+    footer .au-revoir .title {
+        position: static;
+        transform: none;
+    }
+
+    footer .au-revoir .title h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    footer .au-revoir .ghost {
+        display: none;
+    }
+}

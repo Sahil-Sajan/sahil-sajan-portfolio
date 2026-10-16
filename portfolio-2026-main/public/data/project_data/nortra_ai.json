@@ -1,0 +1,75 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "An AI operations layer that sits in front of your CRM",
+            "text3": "Nortra is an AI response and operations platform that intercepts pre-deal CRM workflows — acting as the system of action before a lead ever reaches close. I led front-end development at Samarix, building operational dashboards that surface AI-generated responses and enable teams to manage, action, and route leads intelligently. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE PROBLEM",
+            "text2": "CRMs capture deals. They don't close them.",
+            "text3": "Sales teams spend a disproportionate amount of time on pre-deal work — triaging leads, crafting initial responses, qualifying intent — before a deal even enters the CRM pipeline. Nortra exists to automate and accelerate that layer. The front-end challenge was making complex, AI-driven data flows feel fast and intuitive for non-technical sales operators."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_2.webp",
+            "caption": "The operations dashboard — AI-generated responses surfaced and ready to action"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE APPROACH",
+            "text2": "Operational clarity over feature density",
+            "text3": "The key design and development challenge was avoiding cognitive overload. Sales operators need to triage dozens of AI-processed leads quickly. I built the interface around a clear action-first hierarchy — each lead card surfaces the AI response, the recommended action, and the one-click CTA without burying them in metadata. Data visualisation components helped team leads track response quality and pipeline velocity at a glance."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_3.webp",
+            "caption": "Lead cards designed for fast triage — action in one click"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_4.webp",
+            "caption": "Pipeline velocity and AI response quality tracked in real time"
+        },
+        {
+            "type": "bigtext",
+            "text1": "MOTION",
+            "text2": "Making data flows feel effortless",
+            "text3": "I implemented seamless, animated UI patterns using Framer Motion throughout the platform. When complex data flows are in motion — leads being processed, responses being generated, statuses updating — animation is what makes the system feel alive rather than broken. Every transition was designed to carry the user's attention forward, not interrupt it."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_5.webp",
+            "caption": "Animated state transitions during AI processing keep operators informed without blocking them"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_6.webp",
+            "caption": "Response management interface — approve, edit, or re-generate in context"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Speed is the product",
+            "text3": "In an AI operations tool, the front-end performance IS the product. A laggy interface breaks the trust operators place in AI-generated recommendations. I applied code splitting, lazy loading, and image optimisation throughout — keeping Lighthouse scores high and ensuring the platform felt as fast as the AI pipeline behind it."
+        }
+    ],
+    "details": {
+        "timeline": "2025 – Present",
+        "company": "Samarix",
+        "tags": [
+            "Web App",
+            "AI Operations",
+            "SaaS"
+        ],
+        "projectTitle": "NORTRA AI",
+        "projectLink": "https://nortra.samarix.cloud/en"
+    }
+}

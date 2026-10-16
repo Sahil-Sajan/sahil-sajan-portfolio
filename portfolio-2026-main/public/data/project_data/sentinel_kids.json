@@ -1,0 +1,96 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/sentinel (2).webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "A real-time parental control platform built for peace of mind",
+            "text3": "Sentinel Kids is a child safety monitoring platform that enables parents to track and control their children's app usage and content in real time. I led the front-end development at Samarix, building the platform from the ground up using Next.js, TypeScript, Tailwind CSS, and Framer Motion — focused on delivering an experience that felt approachable for non-technical parents while handling complex real-time data under the hood."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE CHALLENGE",
+            "text2": "Safety tools that feel like surveillance",
+            "text3": "Parental control software has a reputation for being clunky, overwhelming, and anxiety-inducing. The core challenge was designing a dashboard that surfaces critical information — live activity feeds, app usage stats, content flags — without making parents feel like they are operating a CCTV control room. Every screen needed to feel calm, clear, and actionable."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/s1 (1).webp",
+            "caption": "The main dashboard surfaces the most important activity at a glance"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE APPROACH",
+            "text2": "Role-based access done right",
+            "text3": "The platform serves two distinct user types: parents managing permissions, and children using monitored devices. I designed and built role-based access controls that cleanly separate these experiences — parents get a full activity and approval interface, while the child-facing layer stays lightweight. Notification systems were built to alert parents in real time without creating constant noise."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/s1 (2).webp",
+            "caption": "Role-based views ensure each user sees only what is relevant to them"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/sentinel 2.webp",
+            "caption": "App approval and blocking flows designed to be resolved in under 10 seconds"
+        },
+        {
+            "type": "bigtext",
+            "text1": "GEOFENCING",
+            "text2": "Safety that follows your child into the real world",
+            "text3": "One of Sentinel Kids' most critical safety features is geofencing — parents can mark a safe zone on the map, and the moment a child steps outside that boundary, an instant alert is pushed to the parent. No delay, no manual checking. The interface lets parents draw, resize, and name zones in seconds, and the alert system is designed to cut through notification noise when it matters most."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/Untitled design (3).webp",
+            "caption": "Geofence zone setup — parents define safe areas and get alerted the moment a child leaves"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/Untitled design (4).webp",
+            "caption": "Live activity feed with categorised content alerts"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE REST",
+            "text2": "More screens. More safety.",
+            "text3": "Beyond the core dashboard, I built out notification management, content category controls, and device-level settings. Accessibility was a key focus throughout — the platform needed to work for parents of all technical backgrounds, across all screen sizes."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/Untitled design (5).webp",
+            "caption": "Content category controls — parents can allow or restrict by type"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/Untitled design (6).webp",
+            "caption": "Device-level settings and notification preferences"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/mobile-s.webp",
+            "caption": "Mobile-responsive layout — fully functional on any screen"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Building for people, not just parents",
+            "text3": "Sentinel Kids reinforced how much UX clarity matters when the stakes are emotional. Parents using this platform are worried. The interface's job is to reduce that worry — not amplify it. Optimising Lighthouse scores and implementing code splitting alongside this kept the experience fast, which matters especially for users checking in under stress."
+        }
+    ],
+    "details": {
+        "timeline": "feb 2026 - april 2026",
+        "company": "Samarix",
+        "tags": [
+            "Web App",
+            "Child Safety",
+            "Real-Time Tech"
+        ],
+        "projectTitle": "SENTINEL KIDS",
+        "projectLink": "https://sentinelkids.com/en"
+    }
+}

@@ -1,0 +1,389 @@
+.modifierContent {
+  position: relative;
+  width: 100%;
+  background-color: var(--off-teal);
+  height: max-content;
+}
+
+.modifierSection {
+  display: flex;
+  width: 100%;
+}
+
+.middle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.count {
+  color: var(--off-black);
+  font-weight: 600;
+}
+
+.left {
+    box-sizing: border-box;
+    flex: 0 0 420px;
+    align-self: stretch;
+    gap: 1px;
+    background-color: var(--light-off-teal);
+    border-radius: 0px 0px 9px 9px;
+}
+
+.left .third {
+  width: 100%;
+  height: 100%;
+  background-color: var(--off-white);
+  padding: 30px;
+  border-radius: 9px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-self: stretch;
+  position: relative;
+}
+
+.left .third div {
+  display: flex;
+  width: 100%;
+  gap: 0px;
+  align-items: center;
+  justify-content: start;
+}
+
+.left .third div .iconWrapper {
+  width: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.left .third div .iconWrapper .chevronh4 {
+  font-size: 13px;
+  width: 100%;
+  text-wrap: wrap;
+  margin: 0;
+  font-weight: 800;
+  color: var(--off-black-06);
+}
+
+.left .third:hover > div .iconWrapper {
+  width: 18px;
+}
+
+.left .third .desch4 {
+  font-size: 13px;
+  width: 100%;
+  text-wrap: wrap;
+  font-weight: 400;
+  color: var(--off-black-06);
+  margin: 0;
+}
+
+.left .third .desch3 {
+  font-size: 15px;
+  width: 100%;
+  text-wrap: wrap;
+  font-weight: 400;
+  color: var(--off-black-06);
+  margin: 0;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.right .third {
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--off-white);
+    padding: 30px;
+    border-radius: 9px;
+    gap: 30px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-self: stretch;
+    position: relative;
+}
+
+.right .third div {
+  display: flex;
+  width: 100%;
+  gap: 0px;
+  align-items: center;
+  justify-content: start;
+}
+
+.right .third div .iconWrapper {
+  width: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.right .third div .iconWrapper .chevronh4 {
+  font-size: 13px;
+  width: 100%;
+  text-wrap: wrap;
+  margin: 0;
+  font-weight: 800;
+  color: var(--off-black-06);
+}
+
+.right .third:hover > div .iconWrapper {
+  width: 18px;
+}
+
+.right .third .desch4 {
+  font-size: 13px;
+  width: 100%;
+  text-wrap: wrap;
+  font-weight: 400;
+  color: var(--off-black-06);
+  margin: 0;
+}
+
+.right .third .desch3 {
+  font-size: 15px;
+  width: 100%;
+  text-wrap: wrap;
+  font-weight: 400;
+  color: var(--off-black-06);
+  margin: 0;
+}
+
+.contentBlockWrapper {
+    width: 100%;
+    background-color: var(--off-white);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+
+.contentBlock {
+  background-color: var(--dark-green);
+  border-radius: 6px;
+  padding: 90px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2.1px solid var(--off-teal);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 246px);
+  justify-content: center;
+  gap: 90px 120px;
+  width: 100%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1200px;
+  gap: 15px;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 41/58;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.cardFront {
+  background-color: var(--off-white);
+  transform: rotateY(0deg);
+}
+
+.cardBack {
+  background-color: var(--off-black);
+  transform: rotateY(180deg);
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  image-rendering: pixelated;
+  z-index: 1;
+}
+
+.glimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  transition: all 0.4s ease;
+}
+
+.rect {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(194, 233, 231, 0), rgba(194, 233, 231, 1), rgba(194, 233, 231, 0));
+}
+
+.unlockLabel {
+  color: var(--off-teal);
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 9px;
+  text-align: center;
+}
+
+.cardLabel {
+  color: var(--light-off-teal);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.stickyDiv {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--off-teal);
+}
+
+.menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 1px;
+}
+
+.navLink {
+  background-color: var(--light-off-teal);
+  color: var(--dark-green);
+  border-radius: 9px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.navLink:hover {
+    background-color: var(--off-white);
+    color: var(--off-black-06);
+    font-size: 12.7px;
+}
+
+.cell {
+  background: var(--off-white);
+  flex: 1;
+  border-radius: 9px;
+}
+
+.titleBox {
+  background-color: var(--off-white);
+  padding: 30px;
+  border-radius: 9px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--off-black);
+}
+
+.counter {
+  color: var(--dark-green);
+}
+
+.rounder {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  width: 100%;
+  height: 9px;
+  justify-content: space-between;
+  border-top: 1px solid var(--off-teal);
+}
+
+@media screen and (max-width: 1300px) {
+  .cardsGrid {
+    gap: 60px 48px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .left .third {
+        display: none;
+    }
+
+    .right .third {
+        display: flex;
+    }
+
+    .middle {
+        flex-direction: column;
+        position: relative;
+        max-width: 500px;
+    }
+
+    .left {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        flex: 0 0 auto;
+        height: max-content;
+        z-index: 999;
+    }
+
+    .cardsGrid {
+        grid-template-columns: 246px;
+    }
+
+    .contentBlock {
+        padding: 60px 0px;
+    }
+
+    .contentBlockWrapper {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/r1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "Luxury e-commerce where the storefront is the brand",
+            "text3": "Roos Brothers is a premium clothing brand with heritage going back to 1865. I developed the full e-commerce storefront using Next.js 16, React 19, and TypeScript 5. At the luxury tier, the digital storefront is as much a brand statement as the product itself — every interaction needed to feel considered, refined, and fast. The architecture leverages Next.js Server Components and Server Actions to ensure top-tier performance."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE STOREFRONT",
+            "text2": "Browse, filter, covet",
+            "text3": "I built the full product browsing experience with advanced filtering (by gender, collection, product type, and price), wishlist functionality, and a dynamic cart — all optimized for both performance and high-end aesthetic. Product pages were engineered to load quickly and present imagery at its best, featuring Embla carousels and smooth purchase flows. State is efficiently managed across the app using typed React Context providers."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/r2.webp",
+            "caption": "Product listing with advanced filtering — refined and fast"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/r3.webp",
+            "caption": "Product detail page — imagery-first layout with streamlined purchase flow"
+        },
+        {
+            "type": "bigtext",
+            "text1": "CORE FEATURES",
+            "text2": "8 Technical Highlights of the Platform",
+            "text3": "1. Bespoke Tailoring Module: Customers can input custom garment measurements and save them as reusable profiles.\n2. Multi-Language & RTL: Seamless switching between English, French, and Arabic with full Right-to-Left layout support.\n3. Multi-Currency & Geo-Detection: Automatic country detection via middleware to display localized pricing on first visit.\n4. Comprehensive Authentication: Supports standard login, OTP verification, and Google OAuth integrations.\n5. Protected Customer Dashboard: Next.js middleware-secured portal for order history, saved addresses, and profile management.\n6. Advanced Product Catalog: Multi-layered filtering system with dynamic category routes.\n7. Streamlined Checkout Flow: URL-driven three-step checkout with real-time tax and shipping calculations.\n8. Global AI Chatbot: Floating assistant providing sizing guidance and instant customer support."
+        },
+        {
+            "type": "bigtext",
+            "text1": "CUSTOMER DASHBOARD & BESPOKE TAILORING",
+            "text2": "Personalized luxury at scale",
+            "text3": "Beyond standard e-commerce, I developed a highly customized, protected customer dashboard. One of the standout features is the 'Tailoring Profile' module, allowing users to save exact body measurements for bespoke orders. The dashboard also includes comprehensive order history, address management, and wishlist synchronization, providing a seamless post-purchase experience."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/r4.webp",
+            "caption": "Customer dashboard — order management and bespoke profiles at a glance"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/r5.webp",
+            "caption": "Tailoring interface — custom measurement inputs for bespoke garments"
+        },
+        {
+            "type": "bigtext",
+            "text1": "MOBILE FIRST",
+            "text2": "Fully responsive, every screen, no compromises",
+            "text3": "The entire Roos Brothers storefront was built mobile-first from the ground up. Every layout, component, and interaction — product grids, filters, cart, checkout, and the admin dashboard — was designed to work flawlessly across all screen sizes. No breakpoint was an afterthought. The luxury feel of the desktop experience carries through completely to the smallest mobile viewport, maintaining the brand's high-end identity wherever the customer shops."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/r6.webp",
+            "caption": "Mobile storefront — full feature parity and luxury design at every breakpoint"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Craft is the product at this tier",
+            "text3": "Roos Brothers sharpened my understanding of how design quality directly maps to brand perception — and purchase intent. At the luxury tier, a slow load, a misaligned component, or a jarring transition is not a minor issue. It is a signal that the brand does not match its price point. Every optimization decision here, from Server Actions to customized Next.js caching, was made with that standard in mind."
+        }
+    ],
+    "details": {
+        "timeline": "March 2026 – May 2026",
+        "company": "Samarix",
+        "tags": [
+            "Next.js 16",
+            "E-Commerce",
+            "Bespoke Tailoring",
+            "i18n / RTL"
+        ],
+        "projectTitle": "ROOS BROTHERS 1865",
+        "projectLink": "https://roosbrothers1865.com/en"
+    }
+}

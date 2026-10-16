@@ -1,0 +1,387 @@
+/* ─── Root ─────────────────────────────────────────────────────────────────── */
+
+.e4-root {
+  position: relative;
+  width: 100%;
+  background-color: var(--off-teal);
+  height: 100dvh;
+}
+
+.e4-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.e4-middle {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1px;
+  height: 100%;
+}
+
+/* ─── Left panel ────────────────────────────────────────────────────────────── */
+
+.e4-left {
+  box-sizing: border-box;
+  align-self: stretch;
+  gap: 1px;
+  background-color: var(--light-off-teal);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.e4-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--off-teal);
+  box-sizing: border-box;
+}
+
+/* Title box */
+.e4-title-box {
+  background-color: var(--off-white);
+  padding: 30px;
+  border-radius: 9px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--off-black);
+}
+
+.e4-counter {
+  color: var(--dark-green);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Third boxes */
+.e4-third {
+  background-color: var(--off-white);
+  padding: 30px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.e4-label-sm {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--off-black-06);
+  margin: 0;
+}
+
+.e4-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--off-black-06);
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Metrics row */
+.e4-metrics-row {
+  display: flex;
+  gap: 1px;
+  background-color: var(--off-teal);
+  overflow: hidden;
+}
+
+.e4-metric {
+  flex: 1;
+  background-color: var(--off-white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+/* Controls panel */
+.e4-controls-panel {
+  background-color: var(--off-teal);
+  display: flex;
+  gap: 1px;
+  width: 100%;
+}
+
+.e4-controls-info {
+  width: 50%;
+  background-color: var(--off-white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+.e4-bullet-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.e4-bullet-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.e4-bullet-wrap {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.e4-dpad-wrap {
+  width: 50%;
+  background-color: var(--off-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* D-pad */
+.e4-dpad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.e4-drow {
+  display: flex;
+  gap: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.e4-db-empty {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-off-teal);
+  border-radius: 9px;
+}
+
+.e4-db {
+  width: 100%;
+  height: 100%;
+  background-color: var(--off-white);
+  color: var(--dark-green);
+  border: none;
+  border-radius: 9px;
+  font-family: "Stara", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.12s ease, color 0.12s ease, transform 0.07s ease;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+}
+.e4-db:hover  { background-color: var(--light-off-teal); }
+.e4-db:active, .e4-db--pressed { transform: scale(0.87); }
+
+.e4-db-r img { display: block; }
+
+/* Rounder corners — matches ModifierDeck exactly */
+.e4-rounder {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  width: 100%;
+  height: 9px;
+  justify-content: space-between;
+  border-top: 1px solid var(--off-teal);
+}
+
+/* ─── Right panel ───────────────────────────────────────────────────────────── */
+
+.e4-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.e4-content-wrapper {
+  width: 100%;
+  background-color: var(--off-white);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  height: 100%;
+}
+
+.e4-content-block {
+  background-color: var(--dark-green);
+  border-radius: 6px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border: 2.1px solid var(--off-teal);
+}
+
+/* ─── Canvas & shake ────────────────────────────────────────────────────────── */
+
+.e4-board-outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.e4-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+.e4-shake {
+  animation: e4-shake-kf 0.44s ease;
+}
+
+@keyframes e4-shake-kf {
+  0%, 100% { transform: translateX(0); }
+  15%       { transform: translateX(-7px); }
+  35%       { transform: translateX(6px); }
+  55%       { transform: translateX(-4px); }
+  75%       { transform: translateX(3px); }
+}
+
+/* ─── Win overlay ───────────────────────────────────────────────────────────── */
+
+.e4-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 3px;
+  animation: e4-fade-in 0.3s ease forwards;
+}
+
+@keyframes e4-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.e4-ol-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--off-white);
+}
+
+.e4-ol-stats {
+  font-size: 15px;
+  color: var(--light-off-teal);
+  opacity: 0.7;
+}
+
+.e4-ol-sub {
+  font-size: 15px;
+  color: var(--light-off-teal);
+}
+
+/* ─── Shared button ─────────────────────────────────────────────────────────── */
+
+.e4-btn {
+  background-color: var(--light-green);
+  color: var(--off-black);
+  border: none;
+  padding: 11px 22px;
+  font-family: "Stara", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+.e4-btn:hover {
+  background-color: var(--off-white);
+  color: var(--off-black);
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+
+@media screen and (max-width: 1200px) {
+  .e4-middle {
+    flex-direction: column-reverse;
+    position: relative;
+    max-width: 500px;
+  }
+
+  .e4-left {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    z-index: 999;
+  }
+
+  /* Hide description + metrics on mobile, keep controls */
+  .e4-metrics-row {
+    display: none;
+  }
+
+  .e4-right {
+    flex: 1;
+  }
+
+  .e4-content-wrapper {
+    padding: 18px;
+    height: 100%;
+  }
+
+  .e4-content-block {
+    padding: 18px;
+    min-height: 320px;
+    height: 100%;
+  }
+
+  .e4-rounder {
+    display: none;
+  }
+}

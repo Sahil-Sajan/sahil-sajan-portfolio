@@ -1,0 +1,78 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/ss_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "Streamlined file management and version control for film production",
+            "text3":
+            "In VFX and animation, artists submit multiple versions of shots as work moves through the pipeline, often across teams that need to stay in sync. At VigaET, artists relied on Perforce for versioning, but recurring issues: clunky UI and overly complex flows for simple submissions, slowed them down. The software team built an early prototype of a film‑production versioning tool to address these problems, and once technical viability was proven, I joined to improve the overall user experience."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE PROBLEMS",
+            "text2": "Listening to the people in the pipeline",
+            "text3":
+            "The product lead and I spoke directly with artists at VigaET to understand their workflows and pain points. In their current setup, an animation artist would submit a shot for review, and once approved, the correct version needed to be picked up by the lighting artist. With multiple versions often in play and clients sometimes preferring earlier iterations, this frequently led to manual back‑and‑forth to confirm which version to use. Key problems we uncovered:",
+            "points": [
+                "Version confusion when clients preferred older iterations, forcing artists to manually message each other to confirm the correct file",
+                "A UI that felt overly complex compared to familiar tools like Finder or File Explorer",
+                "Developer‑centric terminology (e.g., check‑in / check‑out) that was confusing for artists and masked simple actions like locking or downloading files",
+                "Unnecessarily complex flows for basic version submissions",
+                "Poor usability on smaller screen sizes, despite artists often keeping the tool docked to a portion of their monitor"
+            ]
+        },
+        {
+            "type": "img",
+            "caption": "A flow that artists were familiar with",
+            "url": "/project_imgs/ss_2.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Prototype before implementing revamp",
+            "url": "/project_imgs/ss_3.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Revamped Logo & Branding",
+            "url": "/project_imgs/ss_4.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Lock files or folders in repository to add them to your workspace for edits",
+            "url": "/project_imgs/ss_5.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Artists can tag a version as “Preferred” for the next artist",
+            "url": "/project_imgs/ss_6.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Workspace with a collapsable bottom menu housing the Modified and Change List tabs",
+            "url": "/project_imgs/ss_7.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "In Sync, with Space to grow",
+            "text3":
+            "Sync Space was one of the more complex products I’ve designed, especially when it came to managing flows across file management and version control for film production. Despite that complexity, it’s become one of my favourite designs - largely because of how comfortable and enjoyable the experience feels in everyday use. Looking ahead, the next focus is strengthening collaboration and evolving the Modified tab to support richer comparisons, such as split‑screen diffs and deeper change insights."
+        }
+    ],
+    "details": {
+        "timeline": "Jan - Mar '25",
+        "company": "VigaET",
+        "tags": [
+            "Desktop App",
+            "Film Production",
+            "File Management"
+        ],
+        "projectTitle": "SYNC SPACE",
+        "projectLink": "https://moviecolab.com/syncspace/"
+    }
+}

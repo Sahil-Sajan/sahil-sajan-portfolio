@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"e:\\\\portfolio-2026\\\\src\\\\components\\\\SnakeGame\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"e:\\\\portfolio-2026\\\\src\\\\components\\\\TerminalBio\")"
+    ]
+  }
+}

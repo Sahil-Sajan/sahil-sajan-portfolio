@@ -1,0 +1,85 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/mc_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "Studio-grade film production management for creators at any budget",
+            "text3":
+            "Movie Colab Projects is a film production management web platform that democratises filmmaking by offering professional‑grade workflows in a budget‑friendly way, enabling teams of any size to produce high‑quality films without expensive tools. It’s used to plan, organise, and collaborate across production, bringing tasks, assets, schedules, and communication into one place so teams stay aligned throughout the process. I joined the project in its early stage, after the core flows and initial design were established, to help refine and evolve the experience."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE DASHBOARD",
+            "text2": "A dashboard no one looked at",
+            "text3":
+            "One of the major features I worked on was the project dashboard, which originally had a fixed layout of 3–4 widgets and was designed primarily for reviewers - team leads who review and manage artist submissions. As internal artists began using Movie Colab for studio VFX and animation work, the dashboard felt too manual and passive. It didn’t surface relevant workflow updates, shot or asset changes, or version assignments, and it wasn’t flexible enough to adapt to different studio workflows, where project needs often varied. As a result, artists - who made up the majority of users, largely ignored the dashboard, limiting its value beyond a small group of reviewers."
+        },
+        {
+            "type": "img",
+            "caption": "The old dashboard",
+            "url": "/project_imgs/mc_2.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE SOLUTION",
+            "text2": "Let there be customisation",
+            "text3":
+            "Customisation became the core of the solution. Artists were grouped by their pipeline stages, and each studio’s workflow demanded different information at a glance. We redesigned the dashboard to be modular, allowing teams to choose from a set of widgets based on their needs, with flexibility to add new ones as workflows evolved. We also cleaned up inconsistencies in hierarchy and typography, and introduced multiple customisable dashboard views, giving reviewers one view to manage artists and another for high‑level project oversight."
+        },
+        {
+            "type": "img",
+            "caption": "Variety of widgets, for all screen-sizes",
+            "url": "/project_imgs/mc_3.webp"
+        },
+        {
+            "type": "img",
+            "caption": "The new dashboard",
+            "url": "/project_imgs/mc_4.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Modal to edit layouts",
+            "url": "/project_imgs/mc_5.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE COMPANION",
+            "text2": "Workflows beyond the desk",
+            "text3":
+            "Movie Colab Projects aimed to unify artist and reviewer workflows through a flexible companion experience. Artists at VigaET were logging sessions in a HR Tool, but those sessions couldn’t be linked to tasks in Movie Colab, creating visibility gaps. We first explored a desktop tool, but it didn’t meaningfully improve their workflow. Based on continued feedback, artists recommended mobile session logging as a better fit for their day‑to‑day work, leading us to implement it directly in the mobile experience. This allowed sessions to be linked to tasks while giving reviewers access to updates and analytics from anywhere."
+        },
+        {
+            "type": "img",
+            "caption": "Projects, Updates and Submissions",
+            "url": "/project_imgs/mc_6.webp"
+        },
+        {
+            "type": "img",
+            "caption": "Session logging with recommendations for Artists",
+            "url": "/project_imgs/mc_7.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Roll camera, keep building",
+            "text3":
+            "Movie Colab Projects is the core product in the Movie Colab suite, and it’s still an active, evolving platform that I continue to design and refine. The long‑term goal is to automate and integrate every part of the film production workflow into a single, cohesive app - so artists can spend less time managing tools and switching contexts, and more time focused on their craft. This project remains an ongoing exploration of how thoughtful design can quietly support complex creative work without getting in the way."
+        }
+    ],
+    "details": {
+        "timeline": "2024 - Present",
+        "company": "VigaET",
+        "tags": [
+            "Web & Mobile App",
+            "Film Production",
+            "AI Integration"
+        ],
+        "projectTitle": "MOVIE COLAB",
+        "projectLink": "https://moviecolab.com/projects/"
+    }
+}

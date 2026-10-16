@@ -1,0 +1,18 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  cursor: wait;
+}
+
+.box {
+  width: 0;
+  height: 0;
+  border-radius: 14px;
+  position: relative;
+  flex-shrink: 0;
+}

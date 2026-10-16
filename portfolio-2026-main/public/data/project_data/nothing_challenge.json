@@ -1,0 +1,53 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/nc_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "Community design challenge submission for Nothing Phone 3a",
+            "text3":
+            "Nothing launched a design challenge for the Phone 3a, inviting the community to reimagine the device's interface. My submission extends Nothing's minimal and retro aesthetic across interface elements, designing widgets, clocks, wallpapers, and a fingerprint unlock animation that feel cohesive with the brand."
+        },
+        {
+            "type": "img",
+            "caption": "",
+            "url": "/project_imgs/nc_2.webp"
+        },
+        {
+            "type": "img",
+            "caption": "",
+            "url": "/project_imgs/nc_3.webp"
+        },
+        {
+            "type": "img",
+            "caption": "",
+            "url": "/project_imgs/nc_4.webp"
+        },
+        {
+            "type": "img",
+            "caption": "",
+            "url": "/project_imgs/nc_5.webp"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "Nothing but fun",
+            "text3":
+            "I didn’t take first place in the software category, but it was a fun project to explore. I learned a lot from the other participants, especially how simple and effective the winning submission was. A good reminder that simplicity really is key."
+        }
+    ],
+    "details": {
+        "timeline": "Apr '25",
+        "company": "Nothing",
+        "tags": [
+            "Community Challenge",
+            "Design for Mobile"
+        ],
+        "projectTitle": "NOTHING COMMUNITY CHALLENGE",
+        "projectLink": "https://www.figma.com/proto/dv9CRj6zbjfftCzheQbCgr/Nothing-Community-Challenge-2025?page-id=0%3A1&node-id=102-4233&viewport=-10860%2C1132%2C0.15&t=GlolcVFslOyLNO3T-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=95%3A1279"
+    }
+}

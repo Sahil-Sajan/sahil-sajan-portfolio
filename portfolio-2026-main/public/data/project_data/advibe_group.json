@@ -1,0 +1,80 @@
+{
+    "content": [
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_1.webp",
+            "caption": ""
+        },
+        {
+            "type": "bigtext",
+            "text1": "OVERVIEW",
+            "text2": "A done-for-you revenue system that fills calendars, predictably",
+            "text3": "Advibe is a lead generation and revenue system that eliminates the guesswork from client acquisition — filling calendars with qualified leads automatically. I led front-end development at Samarix, building the full marketing and conversion platform using Next.js, TypeScript, Tailwind CSS, and Framer Motion. The product lives or dies by conversion rate, which made every UI decision a performance decision."
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE CHALLENGE",
+            "text2": "Marketing sites that convert, not just impress",
+            "text3": "Most marketing platforms optimise for looking good. Advibe needed to actually convert. The challenge was building high-converting landing pages and booking flows where every CTA, every section break, and every interaction was engineered to reduce friction and move the visitor toward a booked call. Form abandonment, scroll depth, and time-to-click were the real metrics — not just aesthetics."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_2.webp",
+            "caption": "Hero section engineered for immediate clarity and a single, dominant CTA"
+        },
+        {
+            "type": "bigtext",
+            "text1": "THE FLOWS",
+            "text2": "Book a call. Request an audit. Simple.",
+            "text3": "I built two core conversion flows: a free strategy call booking system and a website audit request form. Both were designed mobile-first with optimised CTA placement, minimal form fields, and clear value framing at each step. The booking flow integrates directly into the client's calendar, removing every barrier between interest and commitment."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_3.webp",
+            "caption": "Strategy call booking flow — designed to remove every friction point"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_4.webp",
+            "caption": "Website audit request form — optimised field count and CTA framing"
+        },
+        {
+            "type": "bigtext",
+            "text1": "MOBILE FIRST",
+            "text2": "Lead gen happens on phones",
+            "text3": "A significant portion of Advibe's traffic arrives via social ads viewed on mobile. I built every page mobile-first, stress-testing layouts at 320px and scaling up, rather than the reverse. Responsive breakpoints were treated as a core deliverable, not an afterthought — because a broken mobile CTA is a lost lead."
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_5.webp",
+            "caption": "Mobile-first layouts tested at every breakpoint"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_6.webp",
+            "caption": "Social proof and results sections positioned to reinforce conversion intent"
+        },
+        {
+            "type": "img",
+            "url": "/project_imgs/tr_7.webp",
+            "caption": "Framer Motion page transitions — smooth enough to feel premium without slowing conversion"
+        },
+        {
+            "type": "bigtext",
+            "text1": "REFLECTIONS",
+            "text2": "When performance is the design",
+            "text3": "Advibe taught me to think in outcomes, not components. Every animation, layout choice, and loading optimisation was evaluated against one question: does this help someone book a call? That mindset — design in service of measurable outcomes — is something I carry into every project."
+        }
+    ],
+    "details": {
+        "timeline": "2025 – Present",
+        "company": "Samarix",
+        "tags": [
+            "Web App",
+            "Lead Gen",
+            "Marketing Tech"
+        ],
+        "projectTitle": "ADVIBE GROUP",
+        "projectLink": "https://advibegroup.com/en"
+    }
+}

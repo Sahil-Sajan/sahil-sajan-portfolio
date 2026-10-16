@@ -1,0 +1,328 @@
+/* Google Fonts are loaded once from index.html (see <head>) */
+
+.font-menu {
+    z-index: 2;
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    width: 257px;
+    height: max-content;
+    background-color: var(--hero-menu-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 14px;
+    overflow: hidden;
+
+    .top {
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        gap: 14px;
+        box-sizing: border-box;
+        padding: 8px 12px 8px 8px;
+        border-bottom: 1px solid var(--hero-menu-border);
+
+        .top-top {
+            width: 100%;
+            height: 13px;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            justify-content: space-between;
+            padding: 0px 6px 0px 8px;
+            box-sizing: border-box;
+            color: var(--hero-menu-text);
+            font-size: 11px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+
+            .top-top-right {
+                display: flex;
+                flex-grow: 0;
+                flex-shrink: 0;
+                gap: 12px;
+                width: 36px;
+                height: 12px;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    position: relative;
+                    width: 12px;
+                    height: 12px;
+                }
+
+            }
+
+        }
+
+        .top-bot {
+            width: 100%;
+            height: 25px;
+            box-sizing: border-box;
+            padding: 0px 8px;
+            display: flex;
+            gap: 10px;
+            background-color: #383838;
+            border: 1px solid #444444;
+            border-radius: 5px;
+            color: rgba(248, 248, 248, 0.5);
+            font-size: 11px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+
+            img {
+                position: relative;
+                flex-shrink: 0;
+                flex-grow: 0;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        .top-bot:hover {
+            border: 1px solid #0C8CE9;
+            cursor: no-drop;
+        }
+
+    }
+
+    .mid {
+        display: flex;
+        width: 100%;
+        height: max-content;
+        box-sizing: border-box;
+        padding: 0px 8px;
+
+        .mid-top {
+            display: flex;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            padding: 0px 8px;
+            height: 24px;
+            width: 100%;
+            border: 1px solid #444444;
+            border-radius: 5px;
+            color: #F8F8F8;
+            font-size: 11px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            align-items: center;
+            gap: 0px;
+            user-select: none;
+        }
+
+        .mid-top-selected {
+            background-color: #264F78;
+            border-radius: 2px;
+        }
+
+        .mid-top-cursor {
+            color: #F8F8F8;
+            animation: midTopBlink 1s step-end infinite;
+        }
+
+    }
+
+    .bot {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 261px;
+        overflow: hidden;
+        gap: 0px;
+
+        .font-wrapper {
+            display: flex;
+            height: 28px;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0px 36px;
+            color: #F8F8F8;
+            font-size: 15px;
+        }
+
+        .font-wrapper-active {
+            display: flex;
+            height: 28px;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0px 36px;
+            color: #F8F8F8;
+            background-color: #383838;
+            cursor: default;
+            font-size: 15px;
+            cursor: url('/Cursor.svg'), auto;
+        }
+
+    }
+
+}
+
+.fishing-line {
+    position: absolute;
+    z-index: 3;
+    left: 218px;
+    top: 140px;
+    width: max-content;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+
+    .line {
+        width: 1.5px;
+        background-color: var(--off-white);
+        height: 100%;
+    }
+
+    .cursor-wrapper {
+        flex-shrink: 0;
+        flex-grow: 0;
+        position: relative;
+        width: 20px;
+        height: 4px;
+
+        svg {
+            position: absolute;
+            transform: translate(0, -2px);
+            top: 0px;
+            left: 3px;
+        }
+
+    }
+
+}
+
+.hero-text {
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 6px;
+
+    .wrapper-top {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: max-content;
+        border: 2px solid #4CACEC;
+
+        .b1 {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+        }
+
+        .b2 {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+
+        .b3 {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+        }
+
+        .b4 {
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+        }
+    }
+
+    h1 {
+        position: relative;
+        font-size: 42px;
+        font-weight: 400;
+        color: var(--off-black);
+        margin: 0;
+        line-height: 100%;
+    }
+
+}
+
+.heroWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 375px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 0 0 9px 9px;
+    border-bottom: 3px solid var(--off-teal);
+    border-left: 3px solid var(--off-teal);
+    border-right: 3px solid var(--off-teal);
+    box-sizing: border-box;
+    border-top: none;
+    overflow: hidden;
+}
+
+/* Fishing-line arrow stays white in dark mode */
+:global([data-theme="dark"]) .fishing-line {
+    --off-white: #FBFFFD;
+    --off-teal: #FBFFFD;
+}
+
+/* Pin character skin/hair to light-mode values; head opening goes dark */
+:global([data-theme="dark"]) .heroWrapper {
+    --off-black: #121312;
+    --off-white: #FBFFFD;
+    --off-teal: #1E1E1E;
+    --light-off-teal: #ECF8F5;
+    --light-green: #0D0D0D;
+}
+
+.rectHoverArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 165px;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.me {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#FishermanGroupWrapper {
+    position: relative;
+    height: 77px;
+    overflow: hidden;
+}
+
+@keyframes midTopBlink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

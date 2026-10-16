@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Stara";
+    src: url("/fonts/Stara-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Stara";
+    src: url("/fonts/Stara-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Stara";
+    src: url("/fonts/Stara-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Stara";
+    src: url("/fonts/Stara-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    font-family: "Stara", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* --off-teal: #AFE2DC; */
+    /* --light-off-teal: #E6F9EF; */
+    /* --off-white: #F3FFF3; */
+    --off-black: #121312;
+    --dark-green: #00A084;
+    --light-green: #4EDF88;
+
+    /* new colors */
+    --off-teal: #c2e9e7;
+    --light-off-teal: #ECF8F5;
+    --off-white: #FBFFFD;
+
+    --off-black-06: rgba(17, 35, 34, 0.6);
+
+    /* Hero font-menu (overridden in dark mode) */
+    --hero-menu-bg:     #2C2C2C;
+    --hero-menu-border: #444444;
+    --hero-menu-text:   #F8F8F8;
+    --hero-menu-sub:    #AAAAAA;
+
+    /* Hero panel background shades */
+    --hero-bg-main: #00A084;
+    --hero-bg-4:    #009178;
+    --hero-bg-3:    #00826B;
+    --hero-bg-2:    #00735F;
+    --hero-bg-1:    #006352;
+}
+
+/* ── Dark mode ────────────────────────────────────────────────── */
+[data-theme="dark"] {
+    --off-black:       #F0FAF8;
+    --dark-green:      #C0392B;
+    --light-green:     #E74C3C;
+    --off-teal:        #1E1E1E;
+    --light-off-teal:  #252525;
+    --off-white:       #0D0D0D;
+    --off-black-06:    rgba(240, 250, 248, 0.55);
+
+    --hero-menu-bg:     #2A0505;
+    --hero-menu-border: #5C1212;
+    --hero-menu-text:   #FFD5D0;
+    --hero-menu-sub:    #BB7070;
+
+    /* Hero panel background → dark red in dark mode (matches Denji) */
+    --hero-bg-main: #C0392B;
+    --hero-bg-4:    #9B1010;
+    --hero-bg-3:    #8B0000;
+    --hero-bg-2:    #7A0000;
+    --hero-bg-1:    #6B0000;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --off-black-06: var(--off-black);
+        --dark-green: #005C47;
+    }
+}
+
+#root, html {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: url('/Cursor.svg'), auto;
+    background-color: var(--off-white);
+}
+
+#root {
+    position: relative;
+    background-color: var(--off-white);
+}
+
+html {
+    font-size: 3px;
+    scrollbar-gutter: stable;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--off-teal);
+    cursor: url('/Cursor.svg'), auto;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green);
+  border-radius: 9px;
+  border: 3px solid var(--off-teal);
+}
+
+
+.crosshair-overlay {
+  /* tunables */
+  --color: rgba(175, 226, 220, 0.3);
+  --line: 1px;     /* thickness of long lines */
+  --mini: 18px;    /* length of small crosshair arms */
+  --miniT: 1.8px;    /* thickness of small crosshair arms */
+
+  --x: 50vw;
+  --y: 50vh;
+
+  position: fixed;
+  inset: 0;
+  pointer-events: none;   /* do not block clicks */
+  z-index: 9999;          /* above content */
+  opacity: 1;
+}
+
+.crosshair-overlay .v {
+  position: absolute;
+  left: var(--x);
+  top: 0;
+  width: var(--line);
+  height: 100%;
+  background: var(--color);
+  transform: translateX(-50%);
+}
+
+.crosshair-overlay .h {
+  position: absolute;
+  top: var(--y);
+  left: 0;
+  height: var(--line);
+  width: 100%;
+  background: var(--color);
+  transform: translateY(-50%);
+}
+
+/* small thick crosshair at the intersection */
+.crosshair-overlay .center {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+}
+
+.crosshair-overlay .center::before,
+.crosshair-overlay .center::after {
+  content: "";
+  position: absolute;
+  background: var(--off-teal);
+  border-radius: 999px;
+}
+
+/* horizontal mini arm */
+.crosshair-overlay .center::before {
+  width: var(--mini);
+  height: var(--miniT);
+  left: calc(-0.5 * var(--mini));
+  top: calc(-0.5 * var(--miniT));
+}
+
+/* vertical mini arm */
+.crosshair-overlay .center::after {
+  width: var(--miniT);
+  height: var(--mini);
+  left: calc(-0.5 * var(--miniT));
+  top: calc(-0.5 * var(--mini));
+}

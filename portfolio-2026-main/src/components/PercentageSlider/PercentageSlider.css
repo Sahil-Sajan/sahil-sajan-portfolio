@@ -1,0 +1,99 @@
+/* src/components/PercentageSlider.css */
+
+.percentage-slider {
+  -webkit-appearance: none; /* Remove default Safari styling */
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: transparent; /* The track background is handled by the pseudo-element */
+  outline: none;
+  cursor: pointer;
+}
+
+/* --- SLIDER TRACK STYLING --- */
+
+/* Chrome, Safari, Opera, and Edge */
+.percentage-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  /*
+    THIS IS THE KEY CHANGE:
+    We tell the gradient to be dark-green up to the --value percentage,
+    and then immediately switch to off-teal at that same percentage.
+  */
+  background: linear-gradient(
+    to right,
+    var(--off-white) var(--value),
+    var(--off-teal) var(--value)
+  );
+}
+
+/* Firefox */
+.percentage-slider::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    var(--off-white) var(--value),
+    var(--off-teal) var(--value)
+  );
+}
+
+/* --- SLIDER THUMB (the circle) STYLING --- */
+/* No changes needed here, the solid color is perfect. */
+
+/* Chrome, Safari, Opera, and Edge */
+.percentage-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default Safari styling */
+  appearance: none;
+  margin-top: -6px;
+  width: 16px;
+  height: 16px;
+  background: var(--off-white);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.percentage-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.percentage-slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Firefox */
+.percentage-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--off-white);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+#play-pause-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    scale: 1;
+    transition: all 0.2s ease-out;
+
+    img {
+        pointer-events: none;
+    }
+}
+
+#play-pause-button:hover {
+    background-color: var(--light-off-teal);
+}

@@ -1,0 +1,28 @@
+{
+    "cards": [
+        {
+            "name": "FALSE REALITY",
+            "img": "/cards/card1.webp",
+            "unlockLabel": "Unlocked after designing my first FullStack App",
+            "cardLabel": "Grants ability to design an extension to reality worn upon the eyes."
+        },
+        {
+            "name": "THE BUILDER",
+            "img": "/cards/card2.webp",
+            "unlockLabel": "Unlocked from buying a lego set",
+            "cardLabel": "Grants ability to design from the ground up."
+        },
+        {
+            "name": "STRENGTH",
+            "img": "/cards/card3.webp",
+            "unlockLabel": "Unlocked from progressive overload",
+            "cardLabel": "Grants improved growth and resistance to failure."
+        },
+        {
+            "name": "THE TINKERER",
+            "img": "/cards/card4.webp",
+            "unlockLabel": "Unlocked from modding a casio",
+            "cardLabel": "Grants the ability to reshape what already exists."
+        }
+    ]
+}
