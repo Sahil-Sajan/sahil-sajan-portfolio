@@ -60,6 +60,7 @@ const Denji = () => {
   const handRef = useRef(null);
   const scrollTriggerRef = useRef(null);
   const handScrollTriggerRef = useRef(null);
+  const waveTlRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   // Detect mobile
@@ -96,7 +97,7 @@ const Denji = () => {
 
       const rects = gsap.utils.toArray(".rect", container.current);
 
-      gsap.timeline({ repeat: -1, yoyo: true }).to(rects, {
+      waveTlRef.current = gsap.timeline({ repeat: -1, yoyo: true, paused: true }).to(rects, {
         scaleY: 1.4,
         transformOrigin: "bottom",
         duration: 2,
@@ -140,10 +141,6 @@ const Denji = () => {
         end: "bottom bottom",
         scrub: 1,
         markers: false,
-        onUpdate: (self) => {
-          // Ensure the trigger stays active
-          self.refresh();
-        },
       },
     }).scrollTrigger;
 
@@ -212,6 +209,28 @@ const Denji = () => {
       }
       ScrollTrigger.refresh();
     };
+  }, []);
+
+  // Only run the looping wave animation while the section is on screen
+  useEffect(() => {
+    const el = container.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      waveTlRef.current?.resume();
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        const tl = waveTlRef.current;
+        if (!tl) return;
+        if (entry.isIntersecting) tl.resume();
+        else tl.pause();
+      },
+      { rootMargin: "150px" }
+    );
+
+    io.observe(el);
+    return () => io.disconnect();
   }, []);
 
   return (

@@ -137,8 +137,9 @@ const GrassOverlay = ({
 
     let nearViewport = false;
 
+    let appScale = getAppScale();
+
     const updateLayout = () => {
-      const scale = getAppScale();
       const rect = targetRef.current.getBoundingClientRect();
 
       let parentRect = null;
@@ -147,21 +148,30 @@ const GrassOverlay = ({
           componentRef.current.parentElement.getBoundingClientRect();
       }
 
-      if (!parentRect) {
-        setLayout({
-          width: rect.width / scale,
-          height: rect.height / scale,
-          top: (rect.top + window.scrollY) / scale,
-          left: (rect.left + window.scrollX) / scale
-        });
-      } else {
-        setLayout({
-          width: rect.width / scale,
-          height: rect.height / scale,
-          top: (rect.top - parentRect.top) / scale,
-          left: (rect.left - parentRect.left) / scale
-        });
-      }
+      const next = parentRect
+        ? {
+            width: rect.width / appScale,
+            height: rect.height / appScale,
+            top: (rect.top - parentRect.top) / appScale,
+            left: (rect.left - parentRect.left) / appScale
+          }
+        : {
+            width: rect.width / appScale,
+            height: rect.height / appScale,
+            top: (rect.top + window.scrollY) / appScale,
+            left: (rect.left + window.scrollX) / appScale
+          };
+
+      // Bail out (keep the same reference) when nothing changed so we don't
+      // trigger a React re-render on every scroll frame.
+      setLayout((prev) =>
+        prev.width === next.width &&
+        prev.height === next.height &&
+        prev.top === next.top &&
+        prev.left === next.left
+          ? prev
+          : next
+      );
 
       setIsReady(true);
     };
@@ -169,6 +179,7 @@ const GrassOverlay = ({
     updateLayout();
 
     const resizeObserver = new ResizeObserver(() => {
+      appScale = getAppScale();
       requestAnimationFrame(updateLayout);
     });
 
@@ -260,7 +271,6 @@ const GrassOverlay = ({
   if (!isReady || !config) return null;
 
   const STRIP_HEIGHT = 20;
-  const scale = getAppScale();
 
 return (
     <div

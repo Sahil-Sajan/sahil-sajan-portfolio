@@ -91,6 +91,13 @@ const Hero = ({ isLoaded }) => {
 
   // Timelines
   const t1 = useRef(null);
+  const masterTlRef = useRef(null);
+  const waveTlRef = useRef(null);
+
+  // Root element + visibility (pause heavy per-frame work when off-screen)
+  const rootRef = useRef(null);
+  const isHeroVisibleRef = useRef(true);
+  const lastIntersectionCheckRef = useRef(0);
 
   // Scrolling state (via Lenis)
   const isScrollingRef = useRef(false);
@@ -212,6 +219,14 @@ const Hero = ({ isLoaded }) => {
   }, []);
 
   const checkIntersection = useCallback(() => {
+    if (!isHeroVisibleRef.current) return;
+
+    // Throttled: this runs from an infinite timeline's onUpdate and reads up to
+    // ~10 bounding rects per call — too expensive to run on every frame.
+    const now = performance.now();
+    if (now - lastIntersectionCheckRef.current < 80) return;
+    lastIntersectionCheckRef.current = now;
+
     const lineEl = fishingLineRef.current;
     if (!lineEl) return;
 
@@ -513,6 +528,7 @@ const Hero = ({ isLoaded }) => {
     if (!fishermanRef.current) return;
 
     const masterTl = gsap.timeline({ repeat: -1 });
+    masterTlRef.current = masterTl;
 
     const fishermanTl = gsap.timeline();
     fishermanTl
@@ -531,7 +547,10 @@ const Hero = ({ isLoaded }) => {
 
     masterTl.add(fishermanTl, 0);
 
-    return () => masterTl.kill();
+    return () => {
+      masterTl.kill();
+      masterTlRef.current = null;
+    };
     }, []);
 
     // Wave animation
@@ -546,6 +565,7 @@ const Hero = ({ isLoaded }) => {
         if (!rects.length) return;
 
         const t2 = gsap.timeline({ repeat: -1, yoyo: true });
+        waveTlRef.current = t2;
         t2.to(rects, {
         scaleY: 1.4,
         transformOrigin: "top",
@@ -554,7 +574,10 @@ const Hero = ({ isLoaded }) => {
         ease: "wave",
         });
 
-    return () => t2.kill();
+    return () => {
+      t2.kill();
+      waveTlRef.current = null;
+    };
   }, []);
 
   // Parallax
@@ -582,8 +605,32 @@ const Hero = ({ isLoaded }) => {
     };
   }, [lenis]);
 
+  // Pause looping animations + per-frame layout reads while off-screen so they
+  // don't compete with scrolling on mobile.
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        const visible = entry.isIntersecting;
+        isHeroVisibleRef.current = visible;
+        [t1.current, masterTlRef.current, waveTlRef.current].forEach((tl) => {
+          if (!tl) return;
+          if (visible) tl.resume();
+          else tl.pause();
+        });
+      },
+      { rootMargin: "150px" }
+    );
+
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div
+      ref={rootRef}
       style={{
         width: "100%",
         position: "relative",
